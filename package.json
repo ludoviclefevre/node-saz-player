@@ -1,0 +1,43 @@
+{
+  "name": "saz-player",
+  "version": "0.0.0",
+  "description": "A simple SAZ file player.",
+
+  "author": {
+    "name": "Ludovic LEFEVRE",
+    "email": "contact@ludoviclefevre.fr",
+    "url": "http://www.ludoviclefevre.fr"
+  },
+  "repository": "ludoviclefevre/saz-player",
+  "license": "MIT",
+  "files": [
+    "index.js",
+    "cli.js"
+  ],
+  "keywords": [
+    "saz-player",
+    "saz",
+    "fiddler",
+    "player"
+  ],
+  "dependencies": {
+    "meow": "^2.0.0",
+    "saz-parser": "^0.0.5"
+  },
+  "devDependencies": {
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-nodeunit": "^0.4.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "load-grunt-tasks": "^1.0.0",
+    "time-grunt": "^1.0.0",
+    "grunt-mocha-cli": "^1.11.0",
+    "jshint-stylish": "^1.0.0"
+  },
+  "scripts": {
+    "test": "grunt"
+  },
+  "bin": {
+    "saz-player": "cli.js"
+  }
+}
