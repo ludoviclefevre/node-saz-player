@@ -3,9 +3,9 @@
 var assert = require('assert');
 var sazPlayer = require('../');
 
-describe('saz-player node module', function () {
-  it('must have at least one test', function () {
-    sazPlayer();
-    assert(false, 'I was too lazy to write any tests. Shame on me.');
-  });
+describe('saz-player', function () {
+    it('must throw an exception when using bad arguments', function () {
+        sazPlayer();
+        assert(false, 'I was too lazy to write any tests. Shame on me.');
+    });
 });

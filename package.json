@@ -1,6 +1,6 @@
 {
   "name": "saz-player",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A simple SAZ file player.",
 
   "author": {
@@ -8,11 +8,17 @@
     "email": "contact@ludoviclefevre.fr",
     "url": "http://www.ludoviclefevre.fr"
   },
-  "repository": "ludoviclefevre/saz-player",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ludoviclefevre/node-saz-player.git"
+  },
+  "bugs": {
+    "url": "http://github.com/ludoviclefevre/node-saz-player/issues"
+  },
   "license": "MIT",
   "files": [
-    "index.js",
-    "cli.js"
+    "lib",
+    "README.md"
   ],
   "keywords": [
     "saz-player",
@@ -21,23 +27,30 @@
     "player"
   ],
   "dependencies": {
-    "meow": "^2.0.0",
-    "saz-parser": "^0.0.5"
+    "saz-parser": "^0.0.7",
+    "commander": "^2.6.0",
+    "async": "^0.9.0",
+    "request": "^2.53.0",
+    "lodash": "^3.3.1"
   },
   "devDependencies": {
     "grunt-cli": "^0.1.13",
     "grunt-contrib-jshint": "^0.10.0",
     "grunt-contrib-nodeunit": "^0.4.1",
     "grunt-contrib-watch": "^0.6.1",
+    "grunt-mocha-cli": "^1.11.0",
+    "grunt-mocha-cov": "^0.3.0",
+    "grunt-jscs": "^1.5.0",
+    "grunt-escomplex": "^0.0.3",
     "load-grunt-tasks": "^1.0.0",
     "time-grunt": "^1.0.0",
-    "grunt-mocha-cli": "^1.11.0",
-    "jshint-stylish": "^1.0.0"
+    "jshint-stylish": "^1.0.0",
+    "mocha-term-cov-reporter": "^0.2.0"
   },
   "scripts": {
     "test": "grunt"
   },
   "bin": {
-    "saz-player": "cli.js"
+    "saz-player": "./bin/saz-player"
   }
 }
